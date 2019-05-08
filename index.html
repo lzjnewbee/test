@@ -1,20 +1,44 @@
-<!DOCTYPE html>
-<html style="height: 100%">
-   <head>
-       <meta charset="utf-8">
-     
-   </head>
-   <body>
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Gapminder Tools Offline export</title>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <link href="libs/vizabi.css" rel="stylesheet" type="text/css" >
+    <link href="libs/bubblechart.css" rel="stylesheet" type="text/css">
+    <link href="libs/bubblemap.css" rel="stylesheet" type="text/css">
+    <link href="libs/mountainchart.css" rel="stylesheet" type="text/css">
+    <link href="libs/barrankchart.css" rel="stylesheet" type="text/css">
+    <link href="libs/linechart.css" rel="stylesheet" type="text/css">
+
+    <script src="libs/vizabi.js"></script>
+    <script src="libs/bubblechart.js"></script>
+    <script src="libs/bubblemap.js"></script>
+    <script src="libs/mountainchart.js"></script>
+    <script src="libs/barrankchart.js"></script>
+    <script src="libs/linechart.js"></script>
+    <script src="libs/vizabi-ddfcsv-reader.js"></script>
+    <script src="libs/vizabi-csv-reader.js"></script>
+    <script src="libs/vizabi-excel-reader.js"></script>
+  </head>
+
+  <body style="width: 70%; max-width: 900px; height: 100%; margin: 0 auto; font-family: 'Arial';">
+	<h1>Vizabi export</h1>
+	<p>You just exported this file from Gapminder Tools Offline. Congratulations!</p>
+	<p>If you don't see the chart below, you probably did not open the file from a webserver. Out of safety concerns, web browsers don't allow us to read the data straight from your hard drive. Run a webserver locally or upload the files to a webserver online to view them.</p>
+    <p>If you have any comments, praise, bugs or ideas that you would like to share, please let us know on <a href="http://getsatisfaction.com/gapminder/">Get Satisfaction</a>. We love feedback!</p>
+	<div id="placeholder" style="width: 100%; height: 600px;"></div>
 
     <script src="config.js"></script>
-<script type='text/javascript' src='https://10ay.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1000px; height: 827px;'><object class='tableauViz' width='1000' height='827' style='display:none;'><param name='host_url' value='https%3A%2F%2F10ay.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;xnyetp5x7c' /><param name='name' value='_0&#47;1_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object></div>
+    <script>
 
-   </body>
+      var ddfcsvReader = new DDFCsvReader.getDDFCsvReaderObject();
+      Vizabi.Reader.extend("ddf", ddfcsvReader);
+      Vizabi.Reader.extend("ext-csv", CsvReader.csvReaderObject);
+      Vizabi.Reader.extend("excel", ExcelReader.excelReaderObject);
+
+      var viz = Vizabi('BarRankChart', document.getElementById('placeholder'), CONFIG);
+
+    </script>
+  </body>
 </html>
-
-
-
-
-
-
-
