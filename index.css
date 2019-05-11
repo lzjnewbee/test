@@ -1,0 +1,428 @@
+#first{
+	position: relative;
+	width: 100%;
+	height: auto;
+	/*background-image: url("黄金时代.jpg");*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #404A59;
+	margin-left: 0px;
+	/*悬浮z-index: 9999*/
+}
+.second{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	/*margin-top: 0px; */ 
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+
+
+#thirdth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*悬浮z-index: 9999*/
+}
+.title{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color:  #404A59;
+	/*margin-top: 0px;  */
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#fifth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	
+	/*悬浮z-index: 9999*/
+}
+#sixth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*margin-top: 0px;*/  
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+	
+}
+#seventh{
+	position: relative;
+	width: 100%;
+	height: 700px;
+	background-color: #404A59;
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px;*/
+	/*悬浮z-index: 9999*/
+}
+.eighth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*margin-top: 0px; */ 
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#ninth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px;*/
+	/*悬浮z-index: 9999*/
+}
+#tenth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*margin-top: 0px; */ 
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#eleventh{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px;*/
+	/*悬浮z-index: 9999*/
+}
+#eleventh2{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px;*/
+	/*悬浮z-index: 9999*/
+}
+#twelfth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*margin-top: 0px;*/  
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#thirteenth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px;*/
+	/*悬浮z-index: 9999*/
+}
+#fourteenth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	margin-top: 0px;  
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#fifteenth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px;*/
+	/*悬浮z-index: 9999*/
+}
+#sixteenth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*margin-top: 0px;  */
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#seventeenth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px;*/
+	/*悬浮z-index: 9999*/
+}
+
+#eighteenth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	margin-top: 0px;  
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#nineteenth{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	margin-top: 0px;  
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#lzj{
+	position: relative;
+	background-color: #404A59;
+	/*margin-top: 0px;  */
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#yj{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*margin-top: 0px;*/  
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#dr{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*margin-top: 0px;  */
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#hml{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*margin-top: 0px; */ 
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#lxq{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*margin-top: 0px;  */
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#zy{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*margin-top: 0px;  */
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+#last{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #404A59;
+	/*margin-top: 0px;  */
+	/*position:relative;*/
+	/*top: 0px; left: 0px; bottom: 0px; right: 0px; */
+}
+.insecond{
+	margin-left: 15%;
+	margin-right: 15%;
+	/*position:relative;*/
+	text-align:justify;
+	
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#inthirdth{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+.intitle{
+	margin-left: 15%;
+	margin-right: 15%;
+	/*position:relative;*/
+	
+	color: orange;
+	font-size:28px;
+	line-height:180%;
+}
+#insixth{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#inninth{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#ineleventh{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#inthirteenth{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#infifteenth{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#insixteenth{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	
+	color: orange;
+	font-size:36px;
+	line-height:180%;
+}
+#inseventeenth{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#alsofifth{
+	position:relative;
+	width: 100%;	
+	color: azure;
+	font-size:19px;
+}
+
+#innineteenth{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#inyj{	
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#indr{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	
+	color: orange;
+	font-size:28px;
+	line-height:180%;
+}
+#inhml{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#inlxq{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	
+	color: orange;
+	font-size:28px;
+	line-height:180%;
+}
+#inzy{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#inlast{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*position:relative;*/
+	color: azure;
+	font-size:19px;
+	line-height:180%;
+}
+#container4 {
+	min-width: 500px;
+	max-width: 1300px;
+	height: 800px;
+	margin: 0 auto;
+	background-color: #404A59;
+}
+#container3 {
+	min-width: 500px;
+	max-width: 1250px;
+	height: 800px;
+	margin: 0 auto;
+	background-color: #404A59;
+}
+#container {
+	min-width: 500px;
+	max-width: 1450px;
+	height: 800px;
+	margin: 0 auto;
+	background-color: #404A59;
+}
+#container1 {
+	min-width: 500px;
+	max-width: 1400px;
+	height: 800px;
+	margin: 0 auto;
+	background-color: #404A59;
+}
+/*#map1{
+	height: 1200px;
+	width: 60%;
+	margin-left: 10%;	
+	margin-right: 10%;
+	
+	color: orange;
+	font-size:36px;
+	line-height:180%;
+}*/

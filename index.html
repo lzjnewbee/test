@@ -1,0 +1,982 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>地铁的黄金时代</title>
+<link href="index.css"  rel="stylesheet"/>
+<style type="text/css">
+#second #insecond h3 strong {
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+}
+</style>
+	<script src="https://code.highcharts.com.cn/highcharts/highcharts.js"></script>
+	<script src="https://code.highcharts.com.cn/highcharts/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com.cn/highcharts/modules/sankey.js"></script>
+	<script src="https://code.highcharts.com.cn/highcharts/modules/oldie.js"></script>
+	<script src="https://code.highcharts.com.cn/highcharts/themes/dark-unica.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="icon" href="https://static.jianshukeji.com/hcode/images/favicon.ico">
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+       <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+</head>
+
+<body style="background-color: #404A59;display: block; margin: 0 auto; ">
+<div style="position: relative; height: 100%">
+     
+<div id="first"><img src="image/头图.jpg" width="100%" height="100%" alt=""/></div>
+<div style="text-align: right;margin-right: 1%;color: #BDBDBD">图片来源于网络<br/><br/></div>
+<div class="second">
+	<div class="insecond"><font color="#ffffff">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“如果有机会的话，我想一直留在武汉。”小陈对我们说，“我觉得这是一座有魄力的城市。我刚来那会儿，武汉堵得很，光谷更是人挤人。但现在好多了啊，想去哪儿，坐个地铁，绝对不超过一小时，还冬暖夏凉的。” <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+小陈是武汉轨道交通二号线光谷站的施工队队长，90后。来武汉三年多，他从一个“外来人”变成一个操着熟练“汉普”的“江城人”，对这座城从陌生到充满期待。由于工作原因，他可能随时离开武汉，去别的城市“挖地道”。2018年底，他跟单位申请继续留在武汉。“因为武汉也需要我，还有七八条线路等着我们挖噻。武汉这个发展劲头，蛮有板眼。” <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 武汉于小陈，不仅是长江的广博包容，更是地下通道里的飞驰迅猛。他为地铁而来，因地铁而留，由地铁而热爱。日日夜夜里，地铁与这座城，成为他工作中，也成为无数人生活中不可或缺的陪伴。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+类似的事情还发生在首都北京。尽管北京是全国开通地铁最早的城市，人们仍对她的地铁发展充满了憧憬。在2018年底北京8号线三期试运营的铁路上，47年前就尝到过地铁“鲜味”的北京人，依旧兴奋地拿起手机 ，透过玻璃窗拍摄飞驰而过的风景。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+如果城市是一个人，那纵横交错的交通设施就是他的骨架，而隐藏在地下的轨道，则是他的筋脉，畅血流气，释放城市活力。在中国百万级人口的城市里，地铁建设正成为史上最大一笔投资，它激发着人们的国际化大都会想象力和商业想象力，它令一个对城市陌生疏离的人对他重新向往。地铁黄金时代的大门，正在缓缓开启。</font>
+
+</div></div>
+<div class="title"><div class="intitle"><strong>从1971到2018，城市“筋脉”飞速蔓延</strong></div></div>
+<div class="second">
+ <div class="insecond">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      放眼全国，截至2018年12月31日，我国内地开通地铁的城市达到32个（本文所涉及城市，不包含中国港澳台地区），投入运营的线路有137条，运营总里程达4530.93公里。纵览中国各区域，华东地区拥有着最多的地铁线路，北京牵头的华北地区次之，华南地区也正以不可小觑的势头超赶，而西部地区地铁线路较少，仅西安和乌鲁木齐两座省会城市拥有地铁。<br/><br/>
+  </div></div>
+  <!--黑金-->
+  <div style="height: 700px; margin: 0；">
+       <div id="container1" style="height: 100%;margin-right:10%;z-index: 9999;"></div>
+       
+       <script type="text/javascript">
+var dom = document.getElementById("container1");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+
+var data = [
+      { name: "北京", value: 675.4},
+    { name: "广州", value: 431.5},
+    { name: "上海", value: 575.8},
+    { name: "南京", value: 378.5},
+    { name: "武汉", value: 380.6},
+    { name: "深圳", value: 294.2},
+    { name: "重庆", value: 219.8},
+    { name: "成都", value: 226},
+    { name: "天津", value: 166.7},
+    { name: "西安", value: 150.4},
+    { name: "青岛", value: 174.0},
+    { name: "昆明", value: 93.9},
+    { name: "郑州", value: 95.4},
+    { name: "苏州", value: 121},
+    { name: "杭州", value: 117},
+    { name: "长沙", value: 50},
+    { name: "长春", value: 38.6},
+    { name: "无锡", value: 56.2},
+    { name: "石家庄", value: 30.3},
+    { name: "沈阳", value: 59.7},
+    { name: "宁波", value: 74.5},
+    { name: "南宁", value: 53.3},
+    { name: "南昌", value: 48.4},
+    { name: "合肥", value: 52.4},
+    { name: "哈尔滨", value: 23.1},
+    { name: "大连", value: 64.9},
+    { name: "乌鲁木齐", value: 16.5},
+    { name: "厦门", value: 30.3},
+    { name: "贵阳", value: 34.3},
+    { name: "福州", value: 33.9},
+    { name: "佛山", value: 38},
+    { name: "东莞", value: 37.8},
+
+];
+var geoCoordMap = {
+    "上海": [121.48, 31.22],
+    "乌鲁木齐": [87.68,43.77],
+    "宁波": [121.56,29.86],
+    "贵阳": [106.71,26.57],
+    "合肥": [117.27, 31.86],
+    "南京": [118.78, 32.04],
+    "杭州": [120.19, 30.26],
+    "苏州": [120.62, 31.32],
+    "无锡": [120.29, 31.59],
+    "广州": [113.23, 23.16],
+    "深圳": [114.07, 22.62],
+    "佛山": [113.11, 23.05],
+    "东莞": [113.75, 23.04],
+    "福州": [119.3, 26.08],
+    "厦门": [118.1, 24.46],
+    "南宁": [108.33, 22.84],
+    "郑州": [113.65, 34.76],
+    "武汉": [114.31, 30.52],
+    "长沙": [113, 28.21],
+    "南昌": [115.89, 28.68],
+    "北京": [116.46, 39.92],
+    "长春": [125.35, 43.88],
+    "大连": [121.62, 38.92],
+    "沈阳": [123.38, 41.8],
+    "哈尔滨": [126.63, 45.75],
+    "天津": [117.2, 39.13],
+    "青岛": [120.33, 36.07],
+    "石家庄": [114.48, 38.03],
+    "西安": [108.95, 34.27],
+    "成都": [104.06, 30.67],
+    "重庆": [106.54, 29.59],
+    "昆明": [102.73, 25.04],
+
+};
+
+var convertData = function (data) {
+    var res = [];
+    for (var i = 0; i < data.length; i++) {
+        var geoCoord = geoCoordMap[data[i].name];
+        if (geoCoord) {
+            res.push({
+                name: data[i].name,
+                value: geoCoord.concat(data[i].value)
+            });
+        }
+    }
+    return res;
+};
+
+option = {
+    backgroundColor: '#404a59',
+    title: {
+        text: '全国大陆地铁城市分布',
+        left: 'center',
+        textStyle: {
+            color: '#fff'
+        }
+    },
+    tooltip : {
+        trigger: 'item'
+    },
+    legend: {
+        orient: 'vertical',
+        y: 'bottom',
+        x:'right',
+        data:['pm2.5'],
+        textStyle: {
+            color: '#fff'
+        }
+    },
+    geo: {
+        map: 'china',
+        label: {
+            emphasis: {
+                show: false
+            }
+        },
+        roam: true,
+        itemStyle: {
+            normal: {
+                areaColor: '#323c48',
+                borderColor: '#111'
+            },
+            emphasis: {
+                areaColor: '#2a333d'
+            }
+        }
+    },
+    series : [
+        {
+            name: '',
+            type: 'scatter',
+            coordinateSystem: 'geo',
+            data: convertData(data),
+            symbolSize: function (val) {
+                return val[2] / 10;
+            },
+            label: {
+                normal: {
+                    formatter: '{b}',
+                    position: 'right',
+                    show: false
+                },
+                emphasis: {
+                    show: true
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: '#ddb926'
+                }
+            }
+        },
+        {
+            name: '',
+            type: 'effectScatter',
+            coordinateSystem: 'geo',
+            data: convertData(data.sort(function (a, b) {
+                return b.value - a.value;
+            }).slice(0, 100)),
+            symbolSize: function (val) {
+                return val[2] / 16;
+            },
+            showEffectOn: 'render',
+            rippleEffect: {
+                brushType: 'stroke'
+            },
+            hoverAnimation: true,
+            label: {
+                normal: {
+                    formatter: '{b}',
+                    position: 'right',
+                    show: true
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: '#f4e925',
+                    shadowBlur: 10,
+                    shadowColor: '#333'
+                }
+            },
+            zlevel: 1
+        }
+    ]
+};
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+  </div>
+  <div style="text-align: center;color: #BDBDBD">注：圆圈大小代表中国大陆各城市地铁总里程数比例，图示所显示数据为该城市的地理纬度</div>
+<div class="second"><div class="insecond"><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当我们把目光聚焦城市，会惊讶于他们的运营里程。上海作为国际化大都市，拥有669.5公里的地铁里程，车站数高达339座；而北京、广州分别以636.8公里和437.9公里的运营里程紧随其后。</div></div>
+
+<div class="eighth"><div align="center"><img src="image/雷达图.jpg" width="70%" height="auto" alt=""/></div></div>
+
+<div id="ninth"><div id="inninth"><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过对比还可以清楚地发现，地铁线里程数与城市的经济实力有着密不可分的关系。位居城市GDP榜单top3的北京、上海、广州同样占据了运营里程和地铁线路数榜单的前三位，对比两个榜单，城市GDP的排名顺序与城市地铁里程中的排名相差无几。<br/><br/></div></div>
+<div id="tenth" align="center"><img src="image/里程数变化.png" width="70%" height="auto" alt=""/></div>
+<div class="second">
+	<div class="insecond"><font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果说经济发展是城市轨道交通建设的燃料包，那么市民的出行需求则是地铁建设的催化剂。以西安市为例，西安的城市GDP仅有杭州的60%，却拥有着比杭州多了近20公里的地铁里程，这背后是多出20万人口的出行刚需。对于“人的城镇化”，舒适的出行必不可少，即使目前大多已经开通的城市轨道交通都面临着比地面交通更为“拥挤”的尴尬，地铁、轻轨等出行方式仍被视为更绿色、更高效的代表。“第一次坐7号线的时候，我才真正体会到了地铁出行的‘酸爽’。相比在2号线挤成‘肉饼’，我更愿意先公交再地铁来享受7号线的宽松舒适！”谈起前不久开通的武汉地铁7号线，大学生罗俊充满了欣喜。新修轨道疏散了城市中心的交通压力，解开了终年不散的“疙瘩”，更驱散了人们对“地铁同样拥挤”的积怨。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+农业化时代，谁拥有土地谁就拥有财富；工业化时代，机械工具彻底改变了整个世界； 信息化时代，时效性、综合性、竞争性、开放性等时代特性让最快抓住信息的人成为王者。对于城市来说也是如此。处在信息化时代的洪流中，越来越多的城市日夜赶超，反映在城市轨道交通建设上，就是一种发乎内心的追逐——老百姓的期望，拉动经济发展的机会，以及城市综合竞争力的加权。经济和人口两架马车并驾齐驱，催赶着城市疾速延伸自己的“筋脉”，内陆32座城市从初建地铁到2018年，运营里程飞速增长。北上广三座一线城市在几十年间，一脚踩上地铁快车道，翻了无数个“筋斗云”，地铁里程数的增长了几十倍。南京、重庆、武汉三个长江沿线的二线大城市地铁运营里程也已经突破了300公里。随着我国地铁技术的逐渐成熟，后发城市一开始就铆足了劲儿追赶，初始里程排在前三位的东莞、杭州和厦门虽然在2012年及以后才建成自己的第一条地铁，却拥有着比北京多出两倍的初始里程。他们在中国地铁黄金时代中顺流而上，站在巨人的肩膀上飞速编织自己的“筋脉”。<br/><br/>
+</font>
+
+</div></div>
+<div class="eighth"><div align="center"><img src="image/地铁时间变化录屏_1.gif" width="55%" height="auto" alt=""/></div></div>
+<div style="text-align: center;color: #bdbdbd">注：图为从1971年到2018年12月31日，中国城市的地铁线路数变化及城市排名<br/><br/></div>
+<div class="second">
+	<div class="insecond"><font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;沿着时间的脉络往回看，中国地铁史上出现了许多“奇怪”事件：2001年天津地铁“消失”，2008年北京地铁线数飞涨。服务于城市的流动“地下城”，总是随着城市变化的浪潮泛起层层涟漪。自1984年天津地铁运营以来，由于建设标准较低、通车仅限于新华路到天津西站的7.4公里，一直无法起到分流地面人流的作用。据新华社报道，近几年，随着城市公交快速发展，天津地铁客流更是大幅下降，目前日均乘客仅1万人。与此相应，天津地面交通日益紧张。据此，天津在2001年暂停地铁运营，在老地铁的基础上延建，仅在7.4公里区间内运行的尴尬将成为历史。2008年，北京举办奥运会，为了迎接世界各地的国际友人，北京新修建成3条地铁，“地下城”里各色皮肤的人流编织出别样的风采。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1965-1975年，中国用了10年实现了地铁的0到1；2008年至2018年，同样用了10年，中国地铁增加了117条。从中国第一条地铁建成往后推30年，中国有12座城市建成了地铁；从2011-2018年的7年间，中国又有20座城市建成了地铁。12和20的飞跃，是30年与7年中国经济实力的对比。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+最新数据显示，世界城市地铁长度排名中，上海、北京、广州霸占前三位。值得一提的是，广州是在2018年超越伦敦，取代了其世界第三的位置。前20名中，中国就占据了7席。中国用数字告诉世界：中国地铁的黄金时代，已经到来。
+<br/><br/>
+</font>
+
+</div></div>
+<div class="title"><div class="intitle"><strong>从衣食到住行，地铁融入城市人的生活</strong></div></div>
+<div class="second">
+	<div class="insecond"><font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;城市经济发展加快了地铁蔓延的速度，地铁的建设同样反哺孕育他的城市，渗透进人们生活的衣食住行。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+地铁按下了城市发展加速键，同时改变了城市的格局。它从时间和空间上缩短了区域距离，也就拓宽了城市发展的空间。“地铁修到哪里，我就敢买到哪里。”很多在大城市里为了圆购房置业梦的人们，一边勒紧腰带攒钱，一边盯着城市轨道交通的脉络，谋划着每一个可能参与进去的购房机遇。在上世纪90年代初一部电影叫《梅陇镇》中，梅陇镇这个偏远清净的小镇被上海人称为“乡下旮旯头”。1993年地铁1号线通车后，梅陇房产热销，一度成为独立板块，如今这里已经成为上海一个繁华的居住区。类似的故事从电影中走到了很多开通运营城市轨道交通线路的城市里。在轨道交通发展缓慢的那些年份，房地产开发商“忽悠”老百姓购买远郊房产的利器是提供班车服务、承诺一小时进城。而如今，房地产商们乘着地铁的黄金列车，用“秒到地铁站”激励着消费者的购买欲望。地铁楼盘成为地铁经济里不能忽视的一个方面。
+<br/><br/>
+</font></div></div>
+<div class="eighth"><div align="center"><img src="image/3.1-图片-人口密度和地铁线分布.jpg" width="70%" height="auto" alt=""/></div></div>
+<div class="second">
+ <div class="insecond">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      无论哪个城市，地铁修到哪个区域，地铁沿线就会形成一个相对发达的地产和商贸流通区域。其实，不等地铁开通，尚在规划中的轨道交通就能够给沿线地价形成拉动效应。一条尚在图纸上的轨道激活一大片郊区发展，也促使一个城市从单中心走向了多中心。地铁线路纵横交错，居民汇集靠拢。每一个地铁交叉的地方，都是人口密度图上的“深色”高密度基地。<br/><br/>
+  </div></div>
+  <div style="margin: 0;font-size: 17px;color: #fff;text-align: center;font-family:黑体 ">
+   <div><b>每10万居民拥有的地铁站数</b><br/><br/>
+  </div></div>
+  
+  <div style="height: 700px; margin: 0;background-color: #404A59">
+       <div id="container" style="height: 100%"></div>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+       <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+       <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+option = {
+        textStyle: {
+            color: '#fff',
+            fontFamily: 'Source Han Sans',
+            fontWeight: 'lighter'
+
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        legend: {
+            data: ['每10万居民拥有的地铁站数'],
+            left: '80%',
+            top:'2%',
+            itemWidth: 10,
+            itemHeight: 5
+        },
+        xAxis: {
+            type: 'category',
+            axisLabel:{interval: 0},
+            data: ['武汉','南京','北京','深圳','广州','上海','成都','西安','苏州','青岛','天津','杭州','昆明','南昌','无锡','宁波','大连','南宁','郑州','合肥','厦门','沈阳','乌鲁木齐','长沙','贵阳','长春','重庆','福州','佛山','石家庄','哈尔滨','东莞']
+        },
+        yAxis: {
+            name: '地铁站',
+            axisLabel: {
+                formatter: '{value} 站'
+            }},
+        dataZoom: [{ // 这个dataZoom组件，默认控制x轴。
+                type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
+                start: 0, // 左边在 10% 的位置。
+                end: 100 // 右边在 60% 的位置。
+            },
+            { // 这个dataZoom组件，也控制x轴。
+                type: 'inside', // 这个 dataZoom 组件是 inside 型 dataZoom 组件
+                start: 0, // 左边在 10% 的位置。
+                end: 100 // 右边在 60% 的位置。
+            }
+        ],
+        series: [{
+                symbolSize: 10,
+                name: '每10万居民拥有的地铁站数',
+                data: [2.38,2.05,1.78,1.59,1.56,1.40,1.05,0.95,0.91,0.88,0.87,0.87,0.84,0.74,0.70,0.62,0.61,0.60,0.59,0.58,0.58,0.58,0.54,0.53,0.49,0.40,0.28,0.27,0.26,0.24,0.21,0.18],
+                type: 'scatter'
+            }
+        ]
+    }
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+   </div>
+   <div class="second">
+ <div class="insecond">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      地铁的黄金时代，不仅延伸着轨道，而且延伸着人们对城市的包容，对城市的理解，甚至是对生活的改观。城市轨道交通让城市内两地之间的距离有了时间的概念，只要规划好到达地铁站的时间，达到目的地的时间就基本可以预测，正因为此，不少城市的上班族演变成了“掐点族”。“生活就这样被丰富了，浪费在公交车上的时间，在地铁上被释放出来，工作之余可自我支配的时间多了，生活更容易惬意起来。”上班族韩刚（化名）表示，“地铁来了，幸福就来了。”那么，哪些城市是“最幸福”的呢？答案是武汉和南京。这两座城市里的人们，每十万人就能摊到两座及以上的地铁站，相比于每十万人不足一座地铁站的上海，他们在地铁站口被踩掉鞋子的几率更小，承受着更小的“抢座”压力。<br/><br/>
+  </div></div>
+  <!--客运量曲线-->
+  <div id="eleventh" ><div id="container4" style="background-color">
+
+	<script type="text/javascript">
+var dom = document.getElementById("container4");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+option = {
+    backgroundColor: '#404A59',
+    title: {
+        text: '                                                                                                             2018年各城市日均客运总量、最高客运量与城市人口数',
+        textStyle: {
+            fontWeight: 'normal',
+            fontSize: 16,
+            color: '#FFFFFF'
+        },
+        left: '-5%'
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            lineStyle: {
+                color: '#57617B'
+            }
+        }
+    },
+    legend: {
+        icon: 'rect',
+        itemWidth: 14,
+        itemHeight: 5,
+        itemGap: 13,
+        data: ['城市人口', '日均客运量', '日最高客运量'],
+        right: '4%',
+        textStyle: {
+            fontSize: 12,
+            color: '#F1F1F3'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '10%',
+        containLabel: true
+    },
+    xAxis: [{
+        type: 'category',
+            'axisLabel':{
+            interval: 0
+        },
+        boundaryGap: false,
+        axisLine: {
+            lineStyle: {
+                color: '#FFFFFF'
+            }
+        },
+        data: ['重庆', '上海', '北京', '成都', '天津', '广州', '深圳', '武汉', '石家庄', '哈尔滨', '苏州','郑州','西安','杭州','青岛','南京','佛山','东莞','长春','沈阳','宁波','长沙','合肥','福州','昆明','南宁','大连','无锡','南昌','贵阳','厦门','乌鲁木齐']
+    }, {
+        axisPointer: {
+            show: false
+        },
+        axisLine: {
+            lineStyle: {
+                color: '#57617B'
+            }
+        },
+        axisTick: {
+            show: false
+        },
+
+        position: 'bottom',
+        offset: 20,
+        data: ['', '', '', '', '', '', '', '', '', '', {
+            value: '',
+            textStyle: {
+                align: 'left'
+            }
+            
+        }, '']
+    }],
+    yAxis: [{
+        type: 'value',
+        name: '人（人次）/万',
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            lineStyle: {
+                color: '#FFFFFF'
+            }
+        },
+        axisLabel: {
+            margin: 10,
+            textStyle: {
+                fontSize: 14
+            }
+        },
+        splitLine: {
+            lineStyle: {
+                color: '#57617B'
+            }
+        }
+    }],
+    series: [{
+        name: '城市人口',
+        type: 'line',
+        smooth: true,
+        symbol: 'circle',
+        symbolSize: 5,
+        showSymbol: false,
+        lineStyle: {
+            normal: {
+                width: 1
+            }
+        },
+        areaStyle: {
+            normal: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: 'rgba(219, 50, 51, 0.3)'
+                }, {
+                    offset: 0.8,
+                    color: 'rgba(219, 50, 51, 0)'
+                }], false),
+                shadowColor: 'rgba(0, 0, 0, 0.1)',
+                shadowBlur: 10
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: 'rgb(219, 50, 51)',
+                borderColor: 'rgba(219, 50, 51,0.27)',
+                borderWidth: 12
+
+            }
+        },
+        data: [3101.79,2423.78,2154.20,1633.00,1559.60,1490.40,1253.00,1108.10,1095.16,1093.00,1072.17,1013.60,1000.37,980.60,939.48,850.00,846.00,839.22,829.4,829.40,820.20,815.47,808.70,766.00,726.00,715.33,702.00,657.45,554.55,488.19,411.00,222.61]
+    }, {
+        name: '日均客运量',
+        type: 'line',
+        smooth: true,
+        symbol: 'circle',
+        symbolSize: 5,
+        showSymbol: false,
+        lineStyle: {
+            normal: {
+                width: 1
+            }
+        },
+        areaStyle: {
+            normal: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: 'rgba(247,199,9, 0.3)'
+                }, {
+                    offset: 0.8,
+                    color: 'rgba(247,199,9, 0)'
+                }], false),
+                shadowColor: 'rgba(0, 0, 0, 0.1)',
+                shadowBlur: 10
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: 'rgb(247,199,9)',
+                borderColor: 'rgba(247,199,9,0.2)',
+                borderWidth: 12
+
+            }
+        },
+        data: [250.30,1017.20,1054.40,317.40,123.50,835.40,451.00,306.90,24.00,26.70,90.00,80.38,235.40,145.20,47.10,307.00,22,12.60,35.50,90.40,34.07,68.57,41.98,16.70,54.70,58.50,52.70,28.30,38.80,2.04,11.39,3.54]
+    }, {
+        name: '日最高客运量',
+        type: 'line',
+        smooth: true,
+        symbol: 'circle',
+        symbolSize: 5,
+        showSymbol: false,
+        lineStyle: {
+            normal: {
+                width: 1
+            }
+        },
+        areaStyle: {
+            normal: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: 'rgba(60,141,196,0.3)'
+                }, {
+                    offset: 0.8,
+                    color: 'rgba(60,141,196,0)'
+                }], false),
+                shadowColor: 'rgba(0, 0, 0, 0.1)',
+                shadowBlur: 10
+            }
+        },
+        itemStyle: {
+            normal: {
+
+                color: 'rgb(60,141,196)',
+                borderColor: 'rgba(60,141,196,0.2)',
+                borderWidth: 12
+            }
+        },
+        data: [108.80,193.10,197.50,107.80,39.60,237.00,143.00,113.70,27.40,31.10,47.30,74.70,124.30,100.40,39.00,115.40,22,27.00,22.20,58.80,26.20,67.80,32.60,28.20,49.90,61.40,26.70,23.10,54.90,18.30,24.10,8.30]
+    }, ]
+};
+
+
+
+
+
+
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script></div></div>
+  
+<div class="second">
+ <div class="insecond">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      在发达城市打拼的人们是地铁乘坐的主力军，他们沿着朝九晚五的轨迹，奔走在一座座地下站点间。他们紧张的生活，织绘成一幅忙碌而又不乏烟火气的都市图鉴。人们出行越来越依赖地铁，体现在数字上，则是惊人的年总客运量与日均客运量。北京、上海当仁不让地夺走了榜单的前两位，其年客运量（万人次）及日均客运量（万人次）分别达到了384841、1054和371020、1017。就连客运需求量较低的乌鲁木齐，也实现了244万人的客运总量。城市人口决定地铁客运量是显而易见的，而有些城市却“不走寻常路”。例如深圳市，在拥有地铁的城市中，其人口排名仅占第7，却拥有着第4名的客运排名（年总客运量和日均客运量均为第4）；而拥有最多人口的重庆市，客运量仅排在第8位。这些看似不同寻常的结果有城市的实际情况密不可分：深圳市地少人多，于是很多人每天往返于深圳与周围其他城市之间，他们不属于深圳，却同样享受着城市的地铁服务；重庆市地形复杂，单纯的地下轨道交通不能满足人们的出行需求，于是轻轨孕育而生，作为“地上地铁”，丰富着城市的经脉。<br/><br/>
+  </div></div>
+  <div  align="center"><img src="image/最高客运量.jpg" width="70%" height="auto" alt=""/></div>
+  <div class="second">
+ <div class="insecond">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      地铁除了扮演地下交通工具的角色，更像是一张城市的镜子，每一个逗留在地铁站的人们，都是“镜中人”，他们的生活鲜活地印在上面。一年365天，节假日成为输送市民到地铁站最大的通道。每年的清明节、劳动节、国庆节、元旦假期，地铁站总会出现客运高峰，充满浪漫气息的“情人节”也搭起鹊桥，让眷侣们穿梭在一座座“流动地下城”。<br/><br/>
+  </div></div>
+ <div  align="center"><img src="image/颜色分布.png" width="35%" height="auto" alt=""/></div>
+ <div style="text-align: center;color: #bdbdbd">注：本文提取了中国大陆地区137条地铁线路颜色，绘制成图，横纵坐标代表色彩的RGB分量<br/><br/></div>
+  <div class="second">
+ <div class="insecond">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      地铁终归是城市的地铁，而城市是属于人的城市。于是，服务于人的地铁被赋予文化的内涵。中国人喜爱红色，因为红色象征着吉祥、喜气。而蓝色则象征着科技与经济，因此各城市首条线路，大多为红色或蓝色。从全国地铁来看，红黄蓝等饱和度高的暖色填满了大部分线路，而紫色、棕色等冷色则较少出现。<br/><br/>
+  </div></div>
+  <div  align="center"><img src="image/词云.jpg" width="90%" height="auto" alt=""/></div>
+  <div class="second">
+ <div class="insecond">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     城市的历史名片不仅可以呈现在地铁站内的展板上，地铁站命名也印着城市发展脉络的蛛丝马迹。如果你搭上北京地铁2号线的列车，在18个地铁站中，你将一路穿过“阜成门、复兴门、宣武门、和平门、前门、崇文门、建国门、朝阳门、东直门、安定门、西直门”，仿若坐上了一趟穿梭于时光隧道的列车。每一扇“门”都是一段兴衰史，见证着帝都浓厚的历史底蕴。到西安，你可以看到为了纪念冯玉祥将军而开凿的“玉祥门”，西安城墙各门中复建得最完整漂亮的“永宁门”，以及地处城东，象征“迎着太阳升起”的“朝阳门”。“六朝金粉地，金陵帝王州”，同样作为曾经的都城的南京，有着“天下第一瓮城”之称的“中华门”，还有名字非常优雅诗意的“雨花门”。三座古都城市的“门”，开向历史深处，载来千年文化积淀。重庆和武汉作为“新一线城市”，“家”成为了他们的主打字。武汉的杨家湾、罗家庄，重庆的马家岩、陈家桥，曾经那些以姓为名的村庄，它们都标志着那片土地开拓者们的籍贯与姓氏。最终，这些名字也作为地标指示，被放到了地铁里。那些以姓命名的村庄，搭上地铁的快道，驶向城市的队列。原来，地铁不仅可以从农村开向城市，还可以把农村变成城市。<br/><br/>
+  </div></div>
+  <div id="eleventh2" ><div id="container3" style="background-color">
+
+	<script>
+	Highcharts.chart('container3', {
+	title: {
+		text: '地方小吃的钱能走多远？'
+	},
+	series: [{
+		keys: ['from', 'to', 'weight'],
+		data: [
+			['', '2元', 0 ],
+			['驴打滚', '3元', 30 ],
+			['蛋烘糕', '3元', 30 ],
+			['恋爱豆腐果', '4元',30 ],
+			['焖子', '5元', 30 ],
+			['濑粉', '6元', 30 ],
+			['云吞面', '5元', 30 ],
+			['蒜蓉枝', '3元', 30 ],
+			['肠粉', '5元', 30 ],
+			['葱包烩一对', '4元', 30 ],
+			['鸭油烧饼', '5元', 30 ],
+			['', '7元', 0 ],
+			['老友粉', '8元', 30 ],
+			['宁波汤圆', '8元', 30 ],
+			['过桥米线', '10元', 30 ],
+			['福羹', '3元', 30 ],
+			['鸭血粉丝汤', '5元', 30 ],
+			['听装啤酒（330ml）', '6元', 30 ],
+			['花生汤', '5元', 30 ],
+			['梨膏糖', '8元', 30 ],
+			['糖水', '4元', 30 ],
+			['缸炉烧饼', '3元', 30 ],
+			['鸡脚旮沓', '6元', 30 ],
+			['烤包子', '4元', 30 ],
+			['梅花糕', '3元', 30 ],
+			['热干面', '3元', 30 ],
+			['肉夹馍', '5元', 30 ],
+			['熏肉大饼', '5元', 30 ],
+			['糖油粑粑', '6元', 30 ],
+			['烩面', '4元', 30 ],
+			['重庆小面', '6元', 30 ],
+			['马迭尔冰棍', '5元', 30 ],
+			['煎饼果子', '4元', 30 ],
+			['抻面', '5元', 30 ],
+			['3元', '北京', 6 ],
+			['4元', '北京', 12 ],
+			['5元', '北京', 22 ],
+			['6元', '北京', 32 ],
+			['7元', '北京', 52 ],
+			['8元', '北京', 72 ],
+			['2元', '成都', 4 ],
+			['3元', '成都', 8 ],
+			['4元', '成都', 12 ],
+			['5元', '成都', 18 ],
+			['6元', '成都', 24 ],
+			['7元', '成都', 32 ],
+			['8元', '成都', 40 ],
+			['2元', '大连', 6 ],
+			['3元', '大连', 12 ],
+			['4元', '大连', 18 ],
+			['5元', '大连', 26 ],
+			['6元', '大连', 34 ],
+			['7元', '大连', 44 ],
+			['8元', '大连', 54 ],
+			['2元', '东莞', 4 ],
+			['3元', '东莞', 8 ],
+			['4元', '东莞', 12 ],
+			['5元', '东莞', 18 ],
+			['6元', '东莞', 24 ],
+			['7元', '东莞', 32 ],
+			['8元', '东莞', 40 ],
+			['2元', '佛山', 4 ],
+			['3元', '佛山', 8 ],
+			['4元', '佛山', 12 ],
+			['5元', '佛山', 18 ],
+			['6元', '佛山', 24 ],
+			['7元', '佛山', 32 ],
+			['8元', '佛山', 40 ],
+			['2元', '福州', 5 ],
+			['3元', '福州', 10 ],
+			['4元', '福州', 15 ],
+			['5元', '福州', 22 ],
+			['6元', '福州', 29 ],
+			['7元', '福州', 38 ],
+			['8元', '福州', 47 ],
+			['2元', '广州', 4 ],
+			['3元', '广州', 8 ],
+			['4元', '广州', 12 ],
+			['5元', '广州', 18 ],
+			['6元', '广州', 24 ],
+			['7元', '广州', 32 ],
+			['8元', '广州', 40 ],
+			['2元', '贵阳', 4 ],
+			['3元', '贵阳', 8 ],
+			['4元', '贵阳', 12 ],
+			['5元', '贵阳', 18 ],
+			['6元', '贵阳', 24 ],
+			['7元', '贵阳', 32 ],
+			['8元', '贵阳', 40 ],
+			['2元', '杭州', 4 ],
+			['3元', '杭州', 8 ],
+			['4元', '杭州', 12 ],
+			['5元', '杭州', 18 ],
+			['6元', '杭州', 24 ],
+			['7元', '杭州', 32 ],
+			['8元', '杭州', 40 ],
+			['2元', '合肥', 8 ],
+			['3元', '合肥', 14 ],
+			['4元', '合肥', 21 ],
+			['5元', '合肥', 29 ],
+			['6元', '合肥', 38 ],
+			['7元', '合肥', 47 ],
+			['8元', '合肥', 56 ],
+			['2元', '昆明', 4 ],
+			['3元', '昆明', 9 ],
+			['4元', '昆明', 16 ],
+			['5元', '昆明', 25 ],
+			['6元', '昆明', 36 ],
+			['7元', '昆明', 49 ],
+			['8元', '昆明', 64 ],
+			['2元', '南昌', 6 ],
+			['3元', '南昌', 12 ],
+			['4元', '南昌', 20 ],
+			['5元', '南昌', 28 ],
+			['6元', '南昌', 38 ],
+			['7元', '南昌', 48 ],
+			['8元', '南昌', 58 ],
+			['2元', '南京', 10 ],
+			['3元', '南京', 16 ],
+			['4元', '南京', 22 ],
+			['5元', '南京', 30 ],
+			['6元', '南京', 38 ],
+			['7元', '南京', 48 ],
+			['8元', '南京', 58 ],
+			['2元', '南宁', 6 ],
+			['3元', '南宁', 12 ],
+			['4元', '南宁', 18 ],
+			['5元', '南宁', 26 ],
+			['6元', '南宁', 34 ],
+			['7元', '南宁', 44 ],
+			['8元', '南宁', 54 ],
+			['2元', '宁波', 4 ],
+			['3元', '宁波', 8 ],
+			['4元', '宁波', 13 ],
+			['5元', '宁波', 20 ],
+			['6元', '宁波', 29 ],
+			['7元', '宁波', 38 ],
+			['8元', '宁波', 47 ],
+			['2元', '青岛', 5 ],
+			['3元', '青岛', 10 ],
+			['4元', '青岛', 17 ],
+			['5元', '青岛', 27 ],
+			['6元', '青岛', 38 ],
+			['7元', '青岛', 58 ],
+			['8元', '青岛', 78 ],
+			['2元', '厦门', 4 ],
+			['3元', '厦门', 8 ],
+			['4元', '厦门', 12 ],
+			['5元', '厦门', 18 ],
+			['6元', '厦门', 28 ],
+			['7元', '厦门', 43 ],
+			['8元', '厦门', 63 ],
+			['3元', '上海', 6 ],
+			['4元', '上海', 16 ],
+			['5元', '上海', 26 ],
+			['6元', '上海', 36 ],
+			['7元', '上海', 46 ],
+			['8元', '上海', 56 ],
+			['2元', '深圳', 4 ],
+			['3元', '深圳', 8 ],
+			['4元', '深圳', 12 ],
+			['5元', '深圳', 18 ],
+			['6元', '深圳', 24 ],
+			['7元', '深圳', 32 ],
+			['8元', '深圳', 40 ],
+			['2元', '石家庄', 6 ],
+			['3元', '石家庄', 13 ],
+			['4元', '石家庄', 20 ],
+			['5元', '石家庄', 28 ],
+			['6元', '石家庄', 36 ],
+			['7元', '石家庄', 45 ],
+			['8元', '石家庄', 54 ],
+			['2元', '苏州', 6 ],
+			['3元', '苏州', 11 ],
+			['4元', '苏州', 16 ],
+			['5元', '苏州', 23 ],
+			['6元', '苏州', 30 ],
+			['7元', '苏州', 39 ],
+			['8元', '苏州', 48 ],
+			['2元', '乌鲁木齐', 5 ],
+			['3元', '乌鲁木齐', 9 ],
+			['4元', '乌鲁木齐', 13 ],
+			['5元', '乌鲁木齐', 19 ],
+			['6元', '乌鲁木齐', 25 ],
+			['7元', '乌鲁木齐', 33 ],
+			['8元', '乌鲁木齐', 41 ],
+			['2元', '无锡', 5 ],
+			['3元', '无锡', 10 ],
+			['4元', '无锡', 15 ],
+			['5元', '无锡', 22 ],
+			['6元', '无锡', 29 ],
+			['7元', '无锡', 38 ],
+			['8元', '无锡', 47 ],
+			['2元', '武汉', 9 ],
+			['3元', '武汉', 14 ],
+			['4元', '武汉', 21 ],
+			['5元', '武汉', 30 ],
+			['6元', '武汉', 41 ],
+			['7元', '武汉', 54 ],
+			['8元', '武汉', 69 ],
+			['2元', '西安', 6 ],
+			['3元', '西安', 10 ],
+			['4元', '西安', 14 ],
+			['5元', '西安', 20 ],
+			['6元', '西安', 26 ],
+			['7元', '西安', 34 ],
+			['8元', '西安', 42 ],
+			['2元', '长春', 7 ],
+			['3元', '长春', 13 ],
+			['4元', '长春', 19 ],
+			['5元', '长春', 27 ],
+			['6元', '长春', 35 ],
+			['7元', '长春', 45 ],
+			['8元', '长春', 55 ],
+			['2元', '长沙', 6 ],
+			['3元', '长沙', 11 ],
+			['4元', '长沙', 16 ],
+			['5元', '长沙', 23 ],
+			['6元', '长沙', 30 ],
+			['7元', '长沙', 39 ],
+			['8元', '长沙', 48 ],
+			['2元', '郑州', 6 ],
+			['3元', '郑州', 13 ],
+			['4元', '郑州', 21 ],
+			['5元', '郑州', 30 ],
+			['6元', '郑州', 39 ],
+			['7元', '郑州', 48 ],
+			['8元', '郑州', 57 ],
+			['2元', '重庆', 6 ],
+			['3元', '重庆', 11 ],
+			['4元', '重庆', 17 ],
+			['5元', '重庆', 24 ],
+			['6元', '重庆', 32 ],
+			['7元', '重庆', 41 ],
+			['8元', '重庆', 51 ],
+		],
+		type: 'sankey',
+		name: 'Sankey demo series'
+	}]
+});
+</script></div></div>
+  
+
+<div class="second">
+<div class="insecond">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     如果把城市特色小吃和地铁放在一起，会有怎样的奇妙故事呢？用一顿小吃的价钱支付地铁出行，原来可以走那么远！武汉一碗的热干面可以走14公里；石家庄的一个缸炉烧饼能走13公里；南昌的福羹价值12公里；成都的蛋烘糕8公里。这些3元的小吃通通不仅可以转化成地铁里程，还能变成沿途的美景，甚至可以扩宽你的生命——通过地铁出行省下来的时间可以用来探寻更多世界的新奇。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+经济高速发展带来的地理区域扩张使城东城西，江南江北变得疏离分割。而地铁却从真正意义上聚合起整座城市，承载着无数人的朝起晚归，陪跑着一代人的梦想与激情，激发起一座城市的生命力与经济发展的热血喷张，使城市在地下的轨道里，光芒四射。从1971到2018，从衣食到住行，人们重新对城市产生依赖感与归属感，十元内的票价很值很踏实。
+<br/><br/>
+  </div></div>
+  
+<!--<div id="twelfth"><body style="height: 100%; margin: 0">
+       <div id="container2" style="height: 100%"></div>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+       <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+       <script type="text/javascript">
+var dom = document.getElementById("container2");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+app.title = '地铁线里程数与投资额关系';
+
+option = {
+    title: {
+        //text: '地铁线里程数与投资额关系'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    toolbox: {
+        feature: {
+            dataView: {
+                show: true,
+                readOnly: false
+            },
+            restore: {
+                show: true
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    grid: {
+        containLabel: true
+    },
+    legend: {
+        data: ['里程数','投资额']
+    },
+    xAxis: [{
+        type: 'category',
+        axisTick: {
+            alignWithLabel: true
+        },
+        data: ['北京','广州','上海','南京','武汉','深圳','成都','重庆','天津','西安','昆明','青岛','苏州','杭州','郑州','沈阳','长春','大连','哈尔滨','长沙','宁波','无锡','南昌','南宁','合肥','石家庄','佛山','福州','东莞','贵阳','厦门','乌鲁木齐']
+    }],
+    yAxis: [{
+        type: 'value',
+        name: '投资额',
+        min: 0,
+        max: 50,
+        position: 'right',
+        axisLabel: {
+            formatter: '{value}'
+        }
+    }, {
+        type: 'value',
+        name: '里程数',
+        min: 0,
+        max: 3000,
+        position: 'left'
+    }],
+    series: [{
+        name: '投资额',
+        type: 'line',
+        stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                }
+            },
+        lineStyle: {
+                normal: {
+                    width: 3,
+                    shadowColor: 'rgba(0,0,0,0.4)',
+                    shadowBlur: 10,
+                    shadowOffsetY: 10
+                }
+            },
+        data: [1,13,37,35,15,13,25,21,6,45,32,2,4,13,6,4,11]
+    }, {
+        name: '里程数',
+        type: 'bar',
+        yAxisIndex: 1,
+        stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top'
+                }
+            },
+        data: [209,236,325,439,507,576,722,879,938,1364,1806,1851,1931,2198,2349,2460,2735]
+    }]
+};
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+   </body></div>-->
+<div style="font-size: 22px;word-break: normal;padding-left: 15%;padding-right: 15%"><br/><style type="text/css">
+.s{;text-indent:-5em;}
+</style>
+<p class="second" style="font-size: 15px;color: #BdBdbd">数据来源：国家统计局、各城市统计局、各城市轨道交通官网、各城市《2018国民经济和社会发展统计公报》、中国城市轨道交通协会《2018年中国内地城轨交通线路概况》<br/></p>
+</div>
+
+<div style="font-size: 15px;color: #BdBdbd; word-break: normal;padding-left: 15%;padding-right: 15%"><br/>
+<p>数据分析：邓&nbsp;润<br/>文字记者：张&nbsp;杨 杨&nbsp;静<br/>视觉呈现：韩漫玲 杨&nbsp;静<br/>网页制作：李之杰<br/><br/>制作软件：D3.js | Echarts.js | Tableau | Gapminder | wordart | Adobe Photoshop </p>
+</div>
+</div>
+</body>
+</html>
